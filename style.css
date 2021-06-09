@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+.fa {
+    margin-left: 10px;
+    color: rgb(243, 10, 10);
+    transition: .3s;
+}
+
+.fa:hover {
+    margin-left: 10px;
+    color: rgb(182, 19, 19);
+}
+
+.topics:empty::before {
+    content: "click to enter or edit the topic";
+}
+
+.time-box {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 20px;
+    color: honeydew;
+}
+
+#practice_start,
+#practice_end {
+    cursor: pointer;
+    transition: .3s;
+}
+
+#practice_start:hover,
+#practice_end:hover {
+    background-color: salmon;
+}
+
+body {
+    background-color: honeydew;
+    font-family: 'Poppins', sans-serif;
+
+}
+center {
+    height: 80vh;
+    transform: translateY(10%);
+}
+.color{
+    position: absolute;
+    filter: blur(150px);
+}
+.color:nth-child(1){
+    width: 60%;
+    height: 20vh;
+    background-color: rgb(15, 184, 113);
+    z-index: -1;
+    top: -10%;
+    right: 20%;
+}
+.color:nth-child(2){
+    width: 60%;
+    height: 20vh;
+    background-color: rgb(31, 136, 127);
+    z-index: -1;
+    top: 64%;
+    right: 8%;
+}
+.color:nth-child(3){
+    width: 60%;
+    height: 30vh;
+    background-color: rgb(24, 207, 198);
+    z-index: -1;
+    bottom: -10%;
+    right: 27%;
+}
+#table{
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+#time-box{
+    z-index: 1;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+td, th{
+    width: 100px !important;
+    padding: 15px !important;
+}
+th{
+    font-size: 14px;
+}
+h1{
+    margin-bottom: 20px;
+    color: rgb(24, 207, 198);
+}
+td:last-child:hover{
+    background:snow;
+    cursor: pointer;
+    transition: .3s;
+}
+td:last-child:focus, td:last-child:active{
+    background:snow;
+    outline:none;
+}
